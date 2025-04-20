@@ -17,4 +17,12 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void endsWithR() {
+        CountLetters cl = new CountLetters();
+        int result = cl.count("actor");
+        Assertions.assertEquals(1, result);  // debe contar "actor" porque termina en r
+    }
+
+
 }
